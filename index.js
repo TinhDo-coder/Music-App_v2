@@ -60,7 +60,7 @@ function renderMusic() {
     for (var i = 0; i < allMusic.length; i++) {
         var htmls = `<div class="song">
                         <div class="song-info" div-index='${i + 1}' onclick='clicked(this)'>
-                        <img src="/assets/image/song_img/${allMusic[i].img}.jpg" alt="${allMusic[i].img} img">
+                        <img src="./assets/image/song_img/${allMusic[i].img}.jpg" alt="${allMusic[i].img} img">
                         <span class="song-info__number">${i + 1}</span>
                         <span class="song-info__author">${allMusic[i].author}</span>
                         <span class="song-info__dash">-</span>
@@ -79,7 +79,7 @@ function loadMusic(indexNum) {
     songAuthor.innerText = allMusic[indexNum - 1].author
     songImg.src = `/assets/image/song_img/${allMusic[indexNum - 1].img}.jpg`
     songImg.alt = `${allMusic[indexNum - 1].src} img`
-    mainAudio.src = `/music_list/${allMusic[indexNum - 1].src}.mp3`
+    mainAudio.src = `./music_list/${allMusic[indexNum - 1].src}.mp3`
 }
 
 // CD Rotate
