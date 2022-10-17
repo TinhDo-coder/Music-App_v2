@@ -77,7 +77,7 @@ function renderMusic() {
 function loadMusic(indexNum) {
     songName.innerText = allMusic[indexNum - 1].name
     songAuthor.innerText = allMusic[indexNum - 1].author
-    songImg.src = `/assets/image/song_img/${allMusic[indexNum - 1].img}.jpg`
+    songImg.src = `./assets/image/song_img/${allMusic[indexNum - 1].img}.jpg`
     songImg.alt = `${allMusic[indexNum - 1].src} img`
     mainAudio.src = `./music_list/${allMusic[indexNum - 1].src}.mp3`
 }
